@@ -5,7 +5,7 @@ using UnityEngine;
 public class fracSelection : MonoBehaviour
 {
     public GameObject[]objectsToInstantiate;
-    int frac;
+    public int frac;
     public Transform pos;
 
      
@@ -18,7 +18,7 @@ public class fracSelection : MonoBehaviour
         
         for(int i=0; i<8;i++){
             frac=Random.Range(0,objectsToInstantiate.Length);
-            Instantiate(objectsToInstantiate[frac], new Vector3(-5f+0.01f+i*.1f,4.36f+i,-.24f), pos.transform.rotation) ;
+            Instantiate(objectsToInstantiate[frac], new Vector3(-5f+0.01f+i*.1f,4.36f+i,-.24f), pos.transform.rotation);
         }
     }
 
