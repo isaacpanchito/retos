@@ -19,12 +19,13 @@ public class triggerRespuesta : MonoBehaviour
 
     float test = 0f;
 
-    public fracSelection FracSelection;
+    //public fracSelection FracSelection;
+    //lo comentado fue lo que intente pero no jalo
 
     private void OnTriggerEnter (Collider other){
         Debug.Log("colicion");
 
-        FracSelection.pos.SetActive(false);
+        //FracSelection.pos.SetActive(false);
 
         switch (other.tag){
             case "1-2":
