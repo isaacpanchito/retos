@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class draganddrop : MonoBehaviour
 {   
     Vector3 offset;
+
+
 
     void OnMouseDown(){
         offset=transform.position- MouseWorldPosition();
@@ -18,5 +21,7 @@ public class draganddrop : MonoBehaviour
         mouseScreenPos.z=Camera.main.WorldToScreenPoint(transform.position).z;
         return Camera.main.ScreenToWorldPoint(mouseScreenPos);
     }
-    
+
+   
+
 }

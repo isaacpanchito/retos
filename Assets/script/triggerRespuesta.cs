@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class triggerRespuesta : MonoBehaviour
 {
     public Text porc;
@@ -19,6 +20,11 @@ public class triggerRespuesta : MonoBehaviour
     public Image health;
 
     float test = 0f;
+
+
+
+
+
 
     //public fracSelection FracSelection;
     //lo comentado fue lo que intente pero no jalo
@@ -168,6 +174,9 @@ public class triggerRespuesta : MonoBehaviour
             break;
         }
     }
+
+
+
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision collision)
     {
@@ -179,6 +188,7 @@ public class triggerRespuesta : MonoBehaviour
     void Start()
     {  
         RectTransform robot = GetComponent<RectTransform>();
+        
     }
       
     public void Scene()
